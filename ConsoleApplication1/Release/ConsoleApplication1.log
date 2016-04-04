@@ -1,0 +1,208 @@
+﻿  stdafx.cpp
+  ConsoleApplication1.cpp
+  Heap.cpp
+Heap.cpp(181): warning C4309: '=': truncation of constant value
+Heap.cpp(182): warning C4309: '=': truncation of constant value
+Heap.cpp(183): warning C4309: '=': truncation of constant value
+Heap.cpp(194): warning C4309: '=': truncation of constant value
+Heap.cpp(195): warning C4309: '=': truncation of constant value
+Heap.cpp(196): warning C4309: '=': truncation of constant value
+  List.cpp
+List.cpp(1): warning C4627: '#include "List.h"': skipped when looking for precompiled header use
+  List.cpp(1): note: Add directive to 'stdafx.h' or rebuild precompiled header
+List.cpp(5): error C2143: syntax error: missing ';' before '*'
+List.cpp(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+List.cpp(5): error C2825: 'Element': must be a class or namespace when followed by '::'
+List.cpp(5): error C2510: 'Element': left of '::' must be a class/struct/union
+List.cpp(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+List.cpp(6): error C2059: syntax error: '{'
+List.cpp(6): error C2143: syntax error: missing ';' before '{'
+List.cpp(6): error C2447: '{': missing function header (old-style formal list?)
+List.cpp(10): error C2143: syntax error: missing ';' before '*'
+List.cpp(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+List.cpp(10): error C2086: 'int Element': redefinition
+  List.cpp(5): note: see declaration of 'Element'
+List.cpp(10): error C2825: 'Element': must be a class or namespace when followed by '::'
+List.cpp(10): error C2510: 'Element': left of '::' must be a class/struct/union
+List.cpp(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+List.cpp(11): error C2059: syntax error: '{'
+List.cpp(11): error C2143: syntax error: missing ';' before '{'
+List.cpp(11): error C2447: '{': missing function header (old-style formal list?)
+List.cpp(15): error C2825: 'Element': must be a class or namespace when followed by '::'
+List.cpp(15): error C2510: 'Element': left of '::' must be a class/struct/union
+List.cpp(15): error C2061: syntax error: identifier 'Element'
+List.cpp(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+List.cpp(16): error C2365: 'Element': redefinition; previous definition was 'data variable'
+  List.cpp(5): note: see declaration of 'Element'
+List.cpp(17): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+List.cpp(17): error C2227: left of '->value' must point to class/struct/union/generic type
+List.cpp(18): error C2065: 'next': undeclared identifier
+List.cpp(18): error C3861: 'setNext': identifier not found
+List.cpp(19): error C2065: 'prev': undeclared identifier
+List.cpp(19): error C3861: 'setPrev': identifier not found
+List.cpp(22): error C2825: 'Element': must be a class or namespace when followed by '::'
+List.cpp(22): error C2510: 'Element': left of '::' must be a class/struct/union
+List.cpp(23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+List.cpp(23): error C2365: 'Element': redefinition; previous definition was 'data variable'
+  List.cpp(5): note: see declaration of 'Element'
+List.cpp(24): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+List.cpp(24): error C2227: left of '->value' must point to class/struct/union/generic type
+List.cpp(25): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+List.cpp(25): error C3861: 'setNext': identifier not found
+List.cpp(26): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+List.cpp(26): error C3861: 'setPrev': identifier not found
+List.cpp(29): error C2825: 'Element': must be a class or namespace when followed by '::'
+List.cpp(29): error C2510: 'Element': left of '::' must be a class/struct/union
+List.cpp(29): error C2065: 'ptr': undeclared identifier
+List.cpp(29): error C2182: 'setNext': illegal use of type 'void'
+List.cpp(30): error C2448: 'setNext': function-style initializer appears to be a function definition
+List.cpp(34): error C2825: 'Element': must be a class or namespace when followed by '::'
+List.cpp(34): error C2510: 'Element': left of '::' must be a class/struct/union
+List.cpp(34): error C2065: 'ptr': undeclared identifier
+List.cpp(34): error C2182: 'setPrev': illegal use of type 'void'
+List.cpp(35): error C2448: 'setPrev': function-style initializer appears to be a function definition
+List.cpp(39): error C2825: 'Element': must be a class or namespace when followed by '::'
+List.cpp(39): error C2510: 'Element': left of '::' must be a class/struct/union
+List.cpp(41): error C2065: 'value': undeclared identifier
+List.cpp(44): error C2143: syntax error: missing ';' before '*'
+List.cpp(44): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+List.cpp(44): error C2086: 'int Element': redefinition
+  List.cpp(5): note: see declaration of 'Element'
+List.cpp(44): error C2653: 'List': is not a class or namespace name
+List.cpp(45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+List.cpp(45): error C2059: syntax error: '{'
+List.cpp(45): error C2143: syntax error: missing ';' before '{'
+List.cpp(45): error C2447: '{': missing function header (old-style formal list?)
+List.cpp(62): error C2653: 'List': is not a class or namespace name
+List.cpp(63): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+List.cpp(64): warning C4018: '<': signed/unsigned mismatch
+List.cpp(65): error C3861: 'addLast': identifier not found
+List.cpp(67): warning C4508: 'List': function should return a value; 'void' return type assumed
+List.cpp(69): error C2653: 'List': is not a class or namespace name
+List.cpp(70): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+List.cpp(71): error C2065: 'first': undeclared identifier
+List.cpp(72): warning C4508: 'List': function should return a value; 'void' return type assumed
+List.cpp(74): error C2653: 'List': is not a class or namespace name
+List.cpp(75): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+List.cpp(75): error C2084: function 'int List(void)' already has a body
+  List.cpp(69): note: see previous definition of 'List'
+List.cpp(76): error C3861: 'empty': identifier not found
+List.cpp(77): error C2065: 'element': undeclared identifier
+List.cpp(77): error C2065: 'first': undeclared identifier
+List.cpp(78): error C2065: 'next': undeclared identifier
+List.cpp(79): error C3861: 'getSize': identifier not found
+List.cpp(80): error C2065: 'next': undeclared identifier
+List.cpp(80): error C2065: 'element': undeclared identifier
+List.cpp(80): error C2227: left of '->getNext' must point to class/struct/union/generic type
+  List.cpp(80): note: type is 'unknown-type'
+List.cpp(81): error C2065: 'element': undeclared identifier
+List.cpp(81): error C2541: 'delete': cannot delete objects that are not pointers
+List.cpp(82): error C3861: 'decSize': identifier not found
+List.cpp(83): error C2065: 'element': undeclared identifier
+List.cpp(83): error C2065: 'next': undeclared identifier
+List.cpp(85): error C2065: 'first': undeclared identifier
+List.cpp(88): error C2653: 'List': is not a class or namespace name
+List.cpp(90): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+List.cpp(90): error C2227: left of '->add' must point to class/struct/union/generic type
+List.cpp(93): error C2653: 'List': is not a class or namespace name
+List.cpp(95): error C3861: 'getSize': identifier not found
+List.cpp(96): error C3861: 'getSize': identifier not found
+List.cpp(97): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+List.cpp(97): error C2227: left of '->add' must point to class/struct/union/generic type
+List.cpp(97): error C3861: 'getSize': identifier not found
+List.cpp(99): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+List.cpp(99): error C2227: left of '->add' must point to class/struct/union/generic type
+List.cpp(102): error C2653: 'List': is not a class or namespace name
+List.cpp(104): error C3861: 'del': identifier not found
+List.cpp(107): error C2653: 'List': is not a class or namespace name
+List.cpp(109): error C3861: 'getSize': identifier not found
+List.cpp(109): error C3861: 'del': identifier not found
+List.cpp(112): error C2653: 'List': is not a class or namespace name
+List.cpp(114): error C3861: 'getSize': identifier not found
+List.cpp(115): error C2065: 'prev': undeclared identifier
+List.cpp(116): error C2065: 'next': undeclared identifier
+List.cpp(116): error C2065: 'prev': undeclared identifier
+List.cpp(116): error C2227: left of '->getNext' must point to class/struct/union/generic type
+  List.cpp(116): note: type is 'unknown-type'
+List.cpp(117): error C2065: 'element': undeclared identifier
+List.cpp(117): error C2061: syntax error: identifier 'Element'
+List.cpp(119): error C2065: 'first': undeclared identifier
+List.cpp(119): error C2065: 'element': undeclared identifier
+List.cpp(121): error C2065: 'next': undeclared identifier
+List.cpp(121): error C2227: left of '->setPrev' must point to class/struct/union/generic type
+  List.cpp(121): note: type is 'unknown-type'
+List.cpp(121): error C2065: 'element': undeclared identifier
+List.cpp(122): error C2065: 'prev': undeclared identifier
+List.cpp(122): fatal error C1003: error count exceeds 100; stopping compilation
+  RedBlackTree.cpp
+RedBlackTree.cpp(411): warning C4309: '=': truncation of constant value
+RedBlackTree.cpp(412): warning C4309: '=': truncation of constant value
+RedBlackTree.cpp(413): warning C4309: '=': truncation of constant value
+  StructModel.cpp
+StructModel.cpp(1): warning C4627: '#include "StructModel.h"': skipped when looking for precompiled header use
+  StructModel.cpp(1): note: Add directive to 'stdafx.h' or rebuild precompiled header
+StructModel.cpp(4): error C2653: 'StructModel': is not a class or namespace name
+StructModel.cpp(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+StructModel.cpp(6): error C2065: 'size': undeclared identifier
+StructModel.cpp(7): warning C4508: 'StructModel': function should return a value; 'void' return type assumed
+StructModel.cpp(9): error C2653: 'StructModel': is not a class or namespace name
+StructModel.cpp(11): error C2065: 'size': undeclared identifier
+StructModel.cpp(14): error C2653: 'StructModel': is not a class or namespace name
+StructModel.cpp(16): error C2065: 'size': undeclared identifier
+StructModel.cpp(19): error C2653: 'StructModel': is not a class or namespace name
+StructModel.cpp(21): error C2065: 'size': undeclared identifier
+StructModel.cpp(24): error C2653: 'StructModel': is not a class or namespace name
+StructModel.cpp(26): error C2065: 'size': undeclared identifier
+  Tab.cpp
+Tab.cpp(1): warning C4627: '#include "Tab.h"': skipped when looking for precompiled header use
+  Tab.cpp(1): note: Add directive to 'stdafx.h' or rebuild precompiled header
+Tab.cpp(4): error C2653: 'Tab': is not a class or namespace name
+Tab.cpp(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+Tab.cpp(6): error C2065: 'table': undeclared identifier
+Tab.cpp(8): error C3861: 'addLast': identifier not found
+Tab.cpp(10): warning C4508: 'Tab': function should return a value; 'void' return type assumed
+Tab.cpp(12): error C2653: 'Tab': is not a class or namespace name
+Tab.cpp(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+Tab.cpp(14): error C2065: 'table': undeclared identifier
+Tab.cpp(15): warning C4508: 'Tab': function should return a value; 'void' return type assumed
+Tab.cpp(17): error C2653: 'Tab': is not a class or namespace name
+Tab.cpp(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+Tab.cpp(18): error C2084: function 'int Tab(void)' already has a body
+  Tab.cpp(12): note: see previous definition of 'Tab'
+Tab.cpp(19): error C3861: 'empty': identifier not found
+Tab.cpp(20): error C2065: 'table': undeclared identifier
+Tab.cpp(20): error C2541: 'delete': cannot delete objects that are not pointers
+Tab.cpp(23): error C2653: 'Tab': is not a class or namespace name
+Tab.cpp(25): error C3861: 'incSize': identifier not found
+Tab.cpp(27): error C2065: 'table': undeclared identifier
+Tab.cpp(30): error C3861: 'getSize': identifier not found
+Tab.cpp(31): error C2065: 'table': undeclared identifier
+Tab.cpp(33): error C2065: 'table': undeclared identifier
+Tab.cpp(34): error C2065: 'table': undeclared identifier
+Tab.cpp(34): error C2541: 'delete': cannot delete objects that are not pointers
+Tab.cpp(35): error C2065: 'table': undeclared identifier
+Tab.cpp(38): error C2653: 'Tab': is not a class or namespace name
+Tab.cpp(43): error C2653: 'Tab': is not a class or namespace name
+Tab.cpp(45): error C3861: 'getSize': identifier not found
+Tab.cpp(48): error C2653: 'Tab': is not a class or namespace name
+Tab.cpp(50): error C3861: 'del': identifier not found
+Tab.cpp(53): error C2653: 'Tab': is not a class or namespace name
+Tab.cpp(55): error C3861: 'getSize': identifier not found
+Tab.cpp(55): error C3861: 'del': identifier not found
+Tab.cpp(59): error C2653: 'Tab': is not a class or namespace name
+Tab.cpp(61): error C3861: 'decSize': identifier not found
+Tab.cpp(63): error C2065: 'table': undeclared identifier
+Tab.cpp(65): error C3861: 'getSize': identifier not found
+Tab.cpp(66): error C2065: 'table': undeclared identifier
+Tab.cpp(68): error C2065: 'table': undeclared identifier
+Tab.cpp(68): error C2541: 'delete': cannot delete objects that are not pointers
+Tab.cpp(69): error C2065: 'table': undeclared identifier
+Tab.cpp(72): error C2653: 'Tab': is not a class or namespace name
+Tab.cpp(74): error C3861: 'getSize': identifier not found
+Tab.cpp(75): error C2065: 'table': undeclared identifier
+Tab.cpp(80): error C2653: 'Tab': is not a class or namespace name
+Tab.cpp(82): error C3861: 'getSize': identifier not found
+Tab.cpp(83): error C2065: 'table': undeclared identifier
+Tab.cpp(89): error C2653: 'Tab': is not a class or namespace name
+Tab.cpp(92): error C3861: 'getSize': identifier not found
+Tab.cpp(93): error C2065: 'table': undeclared identifier

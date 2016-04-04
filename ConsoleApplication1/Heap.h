@@ -16,13 +16,15 @@ public:
 	virtual void del(int i) override;
 	virtual int get(int i) override;
 	virtual int find(int i) override;
-	virtual std::vector<int> retValues() override;
+	virtual std::vector<std::string> retValues() override;
 private:
+	std::vector<std::string> printOne(std::string sp, std::string sn, int v);
 	int leftSon(int i);
 	int rightSon(int i);
 	int father(int i);
 	void swap(int* m, int* n);
 	int *table;
+	std::string cr, cl, cp;
 };
 
 #endif

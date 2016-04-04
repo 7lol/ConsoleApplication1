@@ -1,7 +1,6 @@
 #ifndef	List12309
 #define List12309
 #include "StructModel.h"
-#include <iostream>
 
 class Element {
 protected:
@@ -33,7 +32,7 @@ public:
 	void delLast() override;
 	void add(int key, int i) override;
 	void del(int i) override;
-	std::vector<int> retValues() override;
+	std::vector<std::string> retValues() override;
 	int get(int i) override;
 	int find(int i) override;
 };

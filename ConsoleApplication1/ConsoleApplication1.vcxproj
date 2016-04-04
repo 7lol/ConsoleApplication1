@@ -144,6 +144,7 @@
     <ClInclude Include="AbstractStruct.h" />
     <ClInclude Include="Heap.h" />
     <ClInclude Include="List.h" />
+    <ClInclude Include="RedBlackTree.h" />
     <ClInclude Include="StructModel.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Tab.h" />
@@ -155,6 +156,7 @@
     <ClCompile Include="List.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="RedBlackTree.cpp" />
     <ClCompile Include="StructModel.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>

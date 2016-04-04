@@ -8,6 +8,7 @@
 #include "List.h"
 #include "Tab.h"
 #include "Heap.h"
+#include "RedBlackTree.h"
 #include "AbstractStruct.h"
 #include "ConsoleApplication1.h"
 #include <windows.h>
@@ -15,24 +16,9 @@
 
 using namespace std;
 
-void writeHeapToStream(vector<int> vec, ostream& stream = cout) {
-	for (int k = 0;k < vec.size();k++) {
-		if (vec[k] == -2)
-		{
-			stream << "\n";
-			continue;
-		}
-		stream << vec[k] << "\t";
-	}
-	stream << "\n";
-}
-
-void writeToStream(vector<int> vec, ostream& stream = cout) {
-	if (vec[0] == -2)
-		writeHeapToStream(vec);
-	else
-		for (unsigned int i = 0;i < vec.size();i++)
-			stream << vec[i] << endl;
+void writeToStream(std::vector<std::string> vec, ostream& stream = cout) {
+	for (unsigned int i = 0;i < vec.size();i++)
+		stream << vec[i] << endl;
 }
 
 vector<int> readFromStream(istream& stream = cin) {
@@ -62,9 +48,10 @@ int menus()
 	char keys;
 	bool exit = false;
 	bool menu2 = false;
-	Heap heap = Heap();
-	List list = List();
-	Tab table = Tab();
+	Heap* heap;
+	List* list;
+	Tab* table;
+	RedBlackTree* tree;
 	vector<int> vec;
 	AbstractStruct *data;
 	string filename = "123.txt";
@@ -117,30 +104,37 @@ int menus()
 		cout << "1. Tablica" << endl;
 		cout << "2. Lista" << endl;
 		cout << "3. Kopiec" << endl;
-		cout << "4. Podaj nazwe pliku" << endl;
+		cout << "4. Drzewo RB" << endl;
+		cout << "5. Podaj nazwe pliku" << endl;
 		cout << "0. Wyjscie" << endl;
 		keys = _getch();
 		switch (keys)
 		{
 		case ('1') : {
-			table = Tab(readFromFile(filename));
-			data = &table;
+			table = new Tab(readFromFile(filename));
+			data = table;
 			menu2 = true;
 			break;
 		}
 		case ('2') : {
-			list = List(readFromFile(filename));
-			data = &list;
+			list = new List(readFromFile(filename));
+			data = list;
 			menu2 = true;
 			break;
 		}
 		case ('3') : {
-			heap = Heap(readFromFile(filename));
-			data = &heap;
+			heap = new Heap(readFromFile(filename));
+			data = heap;
 			menu2 = true;
 			break;
 		}
-		case ('4') : {
+		case ('4'): {
+			tree = new RedBlackTree(readFromFile(filename));
+			data = tree;
+			menu2 = true;
+			break;
+		}
+		case ('5') : {
 			do {
 				system("cls");
 				cout << "Podaj prawidlowa nazwe pliku do wczytania \n";

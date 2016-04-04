@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "Heap.h"
 #include <iostream>
+#include <string>
 
 int Heap::get(int i)
 {
@@ -19,6 +20,29 @@ int Heap::find(int key)
 	}
 	return -1;
 }
+
+std::vector<std::string> Heap::printOne(std::string sp, std::string sn, int v)
+{
+	std::vector<std::string> out2, x;
+	std::string tmp, out;
+	std::string s;
+	if (v < getSize())
+	{
+		s = sp;
+		if (sn == cr) s[s.length() - 2] = ' ';
+		x=printOne(s + cp, cr, 2 * v + 2);
+		out2.insert(out2.end(), x.begin(), x.end());
+		s = s.substr(0, sp.length() - 2);
+		out=s+sn+std::to_string(table[v]);
+		out2.push_back(out);
+		s = sp;
+		if (sn == cl) s[s.length() - 2] = ' ';
+		x= printOne(s + cp, cl, 2 * v + 1);
+		out2.insert(out2.end(), x.begin(), x.end());
+	}
+	return out2;
+}
+
 
 int Heap::leftSon(int i) {
 	if (getSize() - 1 >= ((i * 2) + 1))
@@ -70,6 +94,7 @@ void Heap::add(int key, int j=0)
 			if (father(i) == -1) break;
 		}
 	}
+	incSize();
 }
 
 void Heap::del(int key)
@@ -85,6 +110,7 @@ void Heap::del(int key)
 	{
 		newTab[j] = table[j];
 	}
+	table = newTab;
 	while (true)
 	{
 		if (leftSon(i) == -1 || rightSon(i) == -1)
@@ -112,6 +138,7 @@ void Heap::del(int key)
 			i = rightSon(i);
 		}
 	}
+	decSize();
 }
 
 void Heap::addFirst(int key)
@@ -137,20 +164,23 @@ void Heap::delLast()
 	}
 }
 
-std::vector<int> Heap::retValues()
+
+
+std::vector<std::string> Heap::retValues()
 {
-	std::vector<int> vec;
-	for (unsigned int i = 0;i < getSize();i++) {
-		if (log2(i + 1) == (int)log2(i + 1))
-			vec.push_back(-2);
-		vec.push_back(table[i]);
-	}
+	std::vector<std::string> vec;
+	vec = printOne("", "", 0);
 	return vec;
 }
 
 Heap::Heap(std::vector<int> vec)
 {
 	table = NULL;
+	cr = "  ";
+	cl = cp = cr;
+	cr[0] = 218; cr[1] = 196;
+	cl[0] = 192; cl[1] = 196;
+	cp[0] = 179;
 	for (unsigned int i = 0;i < vec.size();i++) {
 		add(vec[i]);
 	}
@@ -159,12 +189,15 @@ Heap::Heap(std::vector<int> vec)
 Heap::Heap()
 {
 	table = NULL;
+	cr = "  ";
+	cl = cp = cr;
+	cr[0] = 218; cr[1] = 196;
+	cl[0] = 192; cl[1] = 196;
+	cp[0] = 179;
 }
 
 Heap::~Heap()
 {
-	/*
 	empty();
 	delete[] table;
-	*/
 }

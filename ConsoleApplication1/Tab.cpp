@@ -1,12 +1,12 @@
-#include "Tab.h"
 #include "stdafx.h"
+#include "Tab.h"
 
 Tab::Tab(std::vector<int> vec)
 {
 	table = NULL;
 	for (unsigned int i = 0; i < vec.size();i++) {
 		addLast(vec[i]);
-	}
+	};
 }
 
 Tab::Tab()
@@ -16,10 +16,8 @@ Tab::Tab()
 
 Tab::~Tab()
 {
-	/*
 	empty();
 	delete[] table;
-	*/
 }
 
 void Tab::add(int key, int i)
@@ -88,11 +86,11 @@ int Tab::find(int key)
 	return -1;
 }
 
-std::vector<int> Tab::retValues()
+std::vector<std::string> Tab::retValues()
 {
-	std::vector<int> vec;
+	std::vector<std::string> vec;
 	for (int i = 0;i < getSize();i++) {
-		vec.push_back(table[i]);
+		vec.push_back(std::to_string(table[i]));
 	}
 	return vec;
 }

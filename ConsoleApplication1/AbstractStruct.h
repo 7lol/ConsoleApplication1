@@ -1,7 +1,6 @@
 #ifndef	AbstractStruct12309
 #define AbstractStruct12309
-#include <vector>
-#include <cstdint>
+#include "stdafx.h"
 
 class AbstractStruct
 {
@@ -14,6 +13,6 @@ public:
 	virtual void del(int i) = 0;
 	virtual int get(int i) = 0;
 	virtual int find(int i) = 0;
-	virtual std::vector<int> retValues() = 0;
+	virtual std::vector<std::string> retValues() = 0;
 };
 #endif

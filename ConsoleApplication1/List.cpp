@@ -1,5 +1,5 @@
-#include "List.h"
 #include "stdafx.h"
+#include "List.h"
 #include <iostream>
 
 		Element * Element::getNext()
@@ -73,16 +73,16 @@
 
 		List::~List()
 		{
-			/*
 			empty();
 			Element* element = first;
 			Element* next;
 			for (int i = 0;i < getSize();i++) {
 				next = element->getNext();
 				delete element;
+				decSize();
 				element = next;
 			}
-			first = NULL;*/
+			first = NULL;
 		}
 
 		void List::addFirst(int key)
@@ -149,12 +149,12 @@
 			}
 		}
 
-		std::vector<int> List::retValues()
+		std::vector<std::string> List::retValues()
 		{
-			std::vector<int> vec;
+			std::vector<std::string> vec;
 			Element* element=first;
 			for (int i = 0;i < getSize();i++) {
-				vec.push_back(element->getValue());
+				vec.push_back(std::to_string(element->getValue()));
 				element = element->getNext();
 			}
 			return vec;
@@ -168,7 +168,7 @@
 		int List::find(int key)
 		{
 			Element* element = first;
-			for (int i = 0;i < getSize();i++) {
+			for (int i = 0; i < getSize(); i++) {
 				if (key == element->getValue())
 					return i;
 				element = element->getNext();

@@ -16,7 +16,7 @@ public:
 	void del(int i) override;
 	int get(int i) override;
 	int find(int i) override;
-	std::vector<int> retValues() override;
+	std::vector<std::string> retValues() override;
 private:
 	int *table;
 };
